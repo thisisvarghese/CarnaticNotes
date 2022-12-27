@@ -262,52 +262,40 @@ function Saaf() {
 
 }
 
+
+
 document.getElementById("MayaMalavagowla").addEventListener("click", MayaMalavagowla);
 
 
 
 function MayaMalavagowla() {
-//alert( 'Sa is' );
-setTimeout(() => {
-  Saf();
-}, "0");
-setTimeout(() => {
-  Re1f();
-}, "1000");
-setTimeout(() => {
-  Ga3f();
-}, "2000");
-}
-
 const MayamalavagowlaRaga = [
-    Saf,
-    Re1f,
-    Ga3f];
-	
-	
-function MayaMalavagowlaPlay(MayamalavagowlaRaga) {
-var myStringArray = ["Hello","World"];
-var arrayLength = myStringArray.length;
-for (var i = 0; i < arrayLength; i++) {
-    console.log(myStringArray[i]);
-    //Do something
-}
-
+    Sa,
+    Re1,
+    Ga3,
+	Ma1];
+PlayRaga(MayamalavagowlaRaga);
 }
 
 
+
+function PlayRaga(Raga) {
+	for (i = 0; i < Raga.length; i++) {
+     console.log("somehtin" + i );
+	 //Raga[i].start();
+	 //Raga[i].stop("+1");
+	 //PlayNote(Raga[i]);
+	 //setTimeout( () => PlayNote(Raga[i]), i*1000 );
+	 delay(i*1000).then(() => { PlayNote(Raga[i])});
+}
+}
 
 function PlayNote(Note) {
-var Note = new Tone.Oscillator(tonic, "sine").toDestination();
- if (Note.state == 'stopped') {
-    Note.start();
-	Note.stop("+1");
-	//info.textContent = 'Frequency is ' + Sa;
-	//osc.start.triggerAttackRelease('8n')
-	//alert( 'Started'+ osc.state);
- } else {
-		Note.stop();
-		//alert( 'Stopped'+ osc.state);
-		}
-
+	Note.start();
+	 Note.stop("+1");
 }
+
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
