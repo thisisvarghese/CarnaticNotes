@@ -277,6 +277,21 @@ setTimeout(() => {
 setTimeout(() => {
   Ga3f();
 }, "2000");
+setTimeout(() => {
+  Ma1f();
+}, "3000");
+setTimeout(() => {
+  Paf();
+}, "4000");
+setTimeout(() => {
+  Dha1f();
+}, "5000");
+setTimeout(() => {
+  Ni3f();
+}, "6000");
+setTimeout(() => {
+  Saaf();
+}, "7000");
 }
 
 const MayamalavagowlaRaga = [
