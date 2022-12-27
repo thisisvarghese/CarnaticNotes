@@ -1,0 +1,3 @@
+<script src="https://unpkg.com/tone"></script>
+<button id="play-button">Sa</button>
+<script src="music.js"></script>
