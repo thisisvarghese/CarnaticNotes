@@ -1,6 +1,7 @@
 //const synth = new Tone.Synth().toMaster()
 //synth.triggerAttackRelease('C4', '8n')
 const tonic = document.getElementById("tonic").value;
+//Here are the ratios of the various notes to the root note...
 
 const Sa = new Tone.Oscillator(tonic, "sine").toDestination();
 const Re1 = new Tone.Oscillator(tonic*16/15, "sine").toDestination();
@@ -342,6 +343,18 @@ loop().then(function () {
 function PlayNote(Note) {
 	Note.start();
 	 Note.stop("+1");
+}
+
+function PlayTheNote(Note) {
+ if (Note.state == 'stopped') {
+    Note.start();
+	Note.stop("+1");
+	//osc.start.triggerAttackRelease('8n')
+	//alert( 'Started'+ osc.state);
+ } else {
+		Re3.stop();
+		//alert( 'Stopped'+ osc.state);
+		}
 }
 
 function javascript_abort()
