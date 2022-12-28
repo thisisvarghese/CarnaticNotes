@@ -273,8 +273,12 @@ const MayamalavagowlaRaga = [
     Sa,
     Re1,
     Ga3,
-	Ma1];
-PlayRaga(MayamalavagowlaRaga);
+	Ma1,
+	Pa,
+	Dha1,
+	Ni3,
+	Saa];
+PlayRaga2(MayamalavagowlaRaga);
 }
 
 
@@ -284,18 +288,52 @@ function PlayRaga(Raga) {
      console.log("somehtin" + i );
 	 //Raga[i].start();
 	 //Raga[i].stop("+1");
-	 //PlayNote(Raga[i]);
+	 PlayNote(Raga[i]);
 	 //setTimeout( () => PlayNote(Raga[i]), i*1000 );
-	 delay(i*1000).then(() => { PlayNote(Raga[i])});
+	 //delay(i*1000).then(() => { PlayNote(Raga[i])});
 }
 }
+
+function PlayRaga2(Raga) {
+var interval = 1000; // how much time should the delay between two iterations be (in milliseconds)?
+
+var loop = function () {
+  return new Promise(function (outerResolve) {
+    var promise = Promise.resolve();
+    var i = 0;
+    var next = function () {
+      var el = Raga[i];
+      // your code here
+	  PlayNote(Raga[i]);
+	  //end code
+      console.log(el);
+      if (++i < Raga.length) {
+        promise = promise.then(function () {
+          return new Promise(function (resolve) {
+            setTimeout(function () {
+              resolve();
+              next();
+            }, interval);
+          });
+        });
+      } else {
+        setTimeout(outerResolve, interval);
+        // or just call outerResolve() if you don't want to wait after the last element
+      }
+    };
+    next();
+  });
+};
+
+loop().then(function () {
+  console.log('Loop finished.');
+});
+
+}
+
 
 function PlayNote(Note) {
 	Note.start();
 	 Note.stop("+1");
-}
-
-function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
