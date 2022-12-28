@@ -54,6 +54,11 @@ document.getElementById("Ni1").addEventListener("click", Ni1f);
 document.getElementById("Ni2").addEventListener("click", Ni2f);
 document.getElementById("Ni3").addEventListener("click", Ni3f);
 document.getElementById("Saa").addEventListener("click", Saaf);
+document.getElementById("Kill").addEventListener("click",Kill);
+
+function Kill(){
+	location.reload();
+}
 
 function Saf() {
  if (Sa.state == 'stopped') {
