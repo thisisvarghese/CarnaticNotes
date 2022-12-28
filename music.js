@@ -37,6 +37,33 @@ const MayamalavagowlaRaga = [
 SaraliVarisai01(MayamalavagowlaRaga);
 }
 
+function DhiraShankarabharanam() {
+const DhiraShankarabharanamRaga = [
+    Sa,
+    Re2,
+    Ga3,
+	Ma1,
+	Pa,
+	Dha2,
+	Ni3,
+	Saa];
+SaraliVarisai01(DhiraShankarabharanamRaga);
+}
+
+function NataBhairavi() {
+const NataBhairaviRaga = [
+    Sa,
+    Re2,
+    Ga2,
+	Ma1,
+	Pa,
+	Dha1,
+	Ni2,
+	Saa];
+SaraliVarisai01(NataBhairaviRaga);
+}
+
+
 document.getElementById("Sa").addEventListener("click", Saf);
 document.getElementById("Re1").addEventListener("click", Re1f);
 document.getElementById("Re2").addEventListener("click", Re2f);
@@ -55,6 +82,9 @@ document.getElementById("Ni2").addEventListener("click", Ni2f);
 document.getElementById("Ni3").addEventListener("click", Ni3f);
 document.getElementById("Saa").addEventListener("click", Saaf);
 document.getElementById("Kill").addEventListener("click",Kill);
+document.getElementById("MayaMalavagowla").addEventListener("click", MayaMalavagowla);
+document.getElementById("DhiraShankarabharanam").addEventListener("click", DhiraShankarabharanam);
+document.getElementById("NataBhairavi").addEventListener("click", NataBhairavi);
 
 function Kill(){
 	location.reload();
@@ -283,12 +313,6 @@ function Saaf() {
 		}
 
 }
-
-
-
-document.getElementById("MayaMalavagowla").addEventListener("click", MayaMalavagowla);
-
-
 
 
 
