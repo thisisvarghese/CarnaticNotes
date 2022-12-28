@@ -278,7 +278,7 @@ const MayamalavagowlaRaga = [
 	Dha1,
 	Ni3,
 	Saa];
-PlayRaga2(MayamalavagowlaRaga);
+SaraliVarisai01(MayamalavagowlaRaga);
 }
 
 
@@ -294,8 +294,14 @@ function PlayRaga(Raga) {
 }
 }
 
-function PlayRaga2(Raga) {
+//const interval = 0; //jest set to 0 for identifying the stop command
+
+function SaraliVarisai01(Raga) {
+//	alert( 'Started'+ interval);
+//if(interval!== 0) javascript_abort(); 
 var interval = 1000; // how much time should the delay between two iterations be (in milliseconds)?
+
+
 
 var loop = function () {
   return new Promise(function (outerResolve) {
@@ -327,6 +333,7 @@ var loop = function () {
 
 loop().then(function () {
   console.log('Loop finished.');
+  SaraliVarisai01(Raga.reverse());
 });
 
 }
@@ -337,3 +344,7 @@ function PlayNote(Note) {
 	 Note.stop("+1");
 }
 
+function javascript_abort()
+{
+   throw new Error('This is not an error. This is just to abort javascript');
+}
