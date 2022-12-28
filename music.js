@@ -21,6 +21,22 @@ const Ni2 = new Tone.Oscillator(tonic*9/5, "sine").toDestination();
 const Ni3 = new Tone.Oscillator(tonic*15/8, "sine").toDestination();
 const Saa = new Tone.Oscillator(tonic*2, "sine").toDestination();
 
+
+//Here are the functions for differnent ragas with their formulas
+
+function MayaMalavagowla() {
+const MayamalavagowlaRaga = [
+    Sa,
+    Re1,
+    Ga3,
+	Ma1,
+	Pa,
+	Dha1,
+	Ni3,
+	Saa];
+SaraliVarisai01(MayamalavagowlaRaga);
+}
+
 document.getElementById("Sa").addEventListener("click", Saf);
 document.getElementById("Re1").addEventListener("click", Re1f);
 document.getElementById("Re2").addEventListener("click", Re2f);
@@ -269,18 +285,7 @@ document.getElementById("MayaMalavagowla").addEventListener("click", MayaMalavag
 
 
 
-function MayaMalavagowla() {
-const MayamalavagowlaRaga = [
-    Sa,
-    Re1,
-    Ga3,
-	Ma1,
-	Pa,
-	Dha1,
-	Ni3,
-	Saa];
-SaraliVarisai01(MayamalavagowlaRaga);
-}
+
 
 
 
