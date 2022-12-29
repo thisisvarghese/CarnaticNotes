@@ -102,6 +102,19 @@ const Karahapriya = [
 SaraliVarisai01(Karahapriya);
 }
 
+function Hanumatodi() {
+const Hanumatodi = [
+    Sa,
+    Re1,
+    Ga2,
+	Ma1,
+	Pa,
+	Dha1,
+	Ni2,
+	Saa];
+SaraliVarisai01(Hanumatodi);
+}
+
 
 document.getElementById("Sa").addEventListener("click", Saf);
 document.getElementById("Re1").addEventListener("click", Re1f);
@@ -127,6 +140,7 @@ document.getElementById("NataBhairavi").addEventListener("click", NataBhairavi);
 document.getElementById("WesternBlues").addEventListener("click", WesternBlues);
 document.getElementById("Kalyani").addEventListener("click", Kalyani);
 document.getElementById("Karahapriya").addEventListener("click", Karahapriya);
+document.getElementById("Hanumatodi").addEventListener("click", Hanumatodi);
 
 function Kill(){
 	location.reload();
