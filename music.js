@@ -126,7 +126,7 @@ document.getElementById("DhiraShankarabharanam").addEventListener("click", Dhira
 document.getElementById("NataBhairavi").addEventListener("click", NataBhairavi);
 document.getElementById("WesternBlues").addEventListener("click", WesternBlues);
 document.getElementById("Kalyani").addEventListener("click", Kalyani);
-document.getElementById("Kalyani").addEventListener("click", Karahapriya);
+document.getElementById("Karahapriya").addEventListener("click", Karahapriya);
 
 function Kill(){
 	location.reload();
