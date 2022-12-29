@@ -392,7 +392,7 @@ function SaraliVarisai01(Raga) {
 //if(interval!== 0) javascript_abort(); 
 var interval = 1000; // how much time should the delay between two iterations be (in milliseconds)?
 
-
+var myHilitor = new Hilitor("content"); // id of the element to parse
 
 var loop = function () {
   return new Promise(function (outerResolve) {
@@ -402,6 +402,84 @@ var loop = function () {
       var el = Raga[i];
       // your code here
 	  PlayNote(Raga[i]);
+  
+  switch (Raga[i]) {
+  case Sa:
+      myHilitor.remove();
+	  myHilitor.apply("Sa");
+    break;
+  case Re1:
+   myHilitor.remove();
+   myHilitor.apply("Re1");
+  case Re2:
+    myHilitor.remove();
+	myHilitor.apply("Re2");
+	//console.log('Mangoes and papayas are $2.79 a pound.');
+    // expected output: "Mangoes and papayas are $2.79 a pound."
+    break;
+  case Re3:
+    myHilitor.remove();
+	myHilitor.apply("Re3");
+	break;
+   case Ga1:
+    myHilitor.remove();
+	myHilitor.apply("Ga1");
+   case Ga2:
+    myHilitor.remove();
+	myHilitor.apply("Ga2");
+	break;
+   case Ga3:
+    myHilitor.remove();
+	myHilitor.apply("Ga3");
+	break;
+   case Ma1:
+    myHilitor.remove();
+	myHilitor.apply("Ma1");
+	break;
+   case Ma2:
+    myHilitor.remove();
+	myHilitor.apply("Ma2");
+	break;
+	case Pa:
+    myHilitor.remove();
+	myHilitor.apply("Pa");
+	break;
+
+   case Dha1:
+    myHilitor.remove();
+	myHilitor.apply("Dha1");
+   case Dha2:
+    myHilitor.remove();
+	myHilitor.apply("Dha2");
+	break;
+   case Dha3:
+    myHilitor.remove();
+	myHilitor.apply("Dha3");
+	break;
+	
+	case Ni1:
+    myHilitor.remove();
+	myHilitor.apply("Ni1");
+   case Ni2:
+    myHilitor.remove();
+	myHilitor.apply("Ni2");
+	break;
+   case Ni3:
+    myHilitor.remove();
+	myHilitor.apply("Ni3");
+	break;
+   case Saa:
+    myHilitor.remove();
+	myHilitor.apply("Saa");
+	break;
+	
+  default:
+    console.log(`Sorry, we are out of`);
+}
+	  
+	  
+
+	   //alert(Raga[i]);
 	  //end code
       console.log(el);
       if (++i < Raga.length) {
