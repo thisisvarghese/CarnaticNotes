@@ -64,6 +64,19 @@ SaraliVarisai01(NataBhairaviRaga);
 }
 
 
+function WesternBlues() {
+const WesternBluesRaga = [
+    Sa,
+    Re3,
+    Ma1,
+	Ma2,
+	Pa,
+	Ni2,
+	Saa];
+SaraliVarisai01(WesternBluesRaga);
+}
+
+
 document.getElementById("Sa").addEventListener("click", Saf);
 document.getElementById("Re1").addEventListener("click", Re1f);
 document.getElementById("Re2").addEventListener("click", Re2f);
@@ -85,6 +98,7 @@ document.getElementById("Kill").addEventListener("click",Kill);
 document.getElementById("MayaMalavagowla").addEventListener("click", MayaMalavagowla);
 document.getElementById("DhiraShankarabharanam").addEventListener("click", DhiraShankarabharanam);
 document.getElementById("NataBhairavi").addEventListener("click", NataBhairavi);
+document.getElementById("WesternBlues").addEventListener("click", WesternBlues);
 
 function Kill(){
 	location.reload();
