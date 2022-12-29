@@ -76,6 +76,19 @@ const WesternBluesRaga = [
 SaraliVarisai01(WesternBluesRaga);
 }
 
+function Kalyani() {
+const Kalyani = [
+    Sa,
+    Re2,
+    Ga3,
+	Ma2,
+	Pa,
+	Dha2,
+	Ni2,
+	Saa];
+SaraliVarisai01(Kalyani);
+}
+
 
 document.getElementById("Sa").addEventListener("click", Saf);
 document.getElementById("Re1").addEventListener("click", Re1f);
@@ -99,6 +112,7 @@ document.getElementById("MayaMalavagowla").addEventListener("click", MayaMalavag
 document.getElementById("DhiraShankarabharanam").addEventListener("click", DhiraShankarabharanam);
 document.getElementById("NataBhairavi").addEventListener("click", NataBhairavi);
 document.getElementById("WesternBlues").addEventListener("click", WesternBlues);
+document.getElementById("Kalyani").addEventListener("click", Kalyani);
 
 function Kill(){
 	location.reload();
