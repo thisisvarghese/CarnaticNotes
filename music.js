@@ -411,6 +411,7 @@ var loop = function () {
   case Re1:
    myHilitor.remove();
    myHilitor.apply("Re1");
+   break;
   case Re2:
     myHilitor.remove();
 	myHilitor.apply("Re2");
@@ -424,6 +425,7 @@ var loop = function () {
    case Ga1:
     myHilitor.remove();
 	myHilitor.apply("Ga1");
+	break;
    case Ga2:
     myHilitor.remove();
 	myHilitor.apply("Ga2");
@@ -444,10 +446,10 @@ var loop = function () {
     myHilitor.remove();
 	myHilitor.apply("Pa");
 	break;
-
    case Dha1:
     myHilitor.remove();
 	myHilitor.apply("Dha1");
+	break;
    case Dha2:
     myHilitor.remove();
 	myHilitor.apply("Dha2");
@@ -455,11 +457,11 @@ var loop = function () {
    case Dha3:
     myHilitor.remove();
 	myHilitor.apply("Dha3");
-	break;
-	
+	break;	
 	case Ni1:
     myHilitor.remove();
 	myHilitor.apply("Ni1");
+	break;
    case Ni2:
     myHilitor.remove();
 	myHilitor.apply("Ni2");
