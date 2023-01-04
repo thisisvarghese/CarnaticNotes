@@ -93,8 +93,8 @@ function Karahapriya() {
 const Karahapriya = [
     Sa,
     Re2,
-    Ga3,
-	Ma2,
+    Ga2,
+	Ma1,
 	Pa,
 	Dha2,
 	Ni2,
